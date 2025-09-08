@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmergênciaMed - Atendimento Rápido Salva Vidas</title>
+    <link rel="stylesheet" href="Site_T_inicial.js">
+    <link rel="stylesheet" href="Site_T_inicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>TriageMEd</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Tela_Login/Med-IA/cadastro.html">Cadastro</a></li>
+                    <li><a href="Tela_Login/Med-IA/cadastro.html">Login</a></li>
+                    <li><a href="#emergencia">Emergência</a></li>
+                    <li><a href="#primeiros-socorros">Primeiros Socorros</a></li>
+                    <li><a href="Tela_Principal/Tela_Triagem/Tela_Triagem.html">Triagem</a></li>
+                    <li><a href="Tela_paciente/Pro.html">Perfil</a></li>
+                </ul>
+            </nav>
+            <a href="tel:192" class="btn btn-emergency">
+                <i class="fas fa-phone"></i>
+                Ligar para Emergência
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+ 
+    <div class="emergency-banner">
+        <p>Em caso de emergência médica, ligue imediatamente para <strong>192 (SAMU)</strong> ou <strong>193 (Bombeiros)</strong></p>
+    </div>
+ 
+    <main>
+        <section id="emergencia" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="emergency-tag">Emergência Médica</div>
+                    <h1>Atendimento Rápido Salva Vidas</h1>
+                    <p>Informações essenciais para situações de emergência médica e primeiros socorros.</p>
+                    <div class="hero-buttons">
+                        <a href="tel:192" class="btn btn-emergency">
+                            <i class="fas fa-phone"></i>
+                            Ligar para SAMU (192)
+                        </a>
+                        <a href="#primeiros-socorros" class="btn btn-outline">
+                            <i class="fas fa-plus-circle"></i>
+                            Primeiros Socorros
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="emergency-info-section">
+            <div class="container">
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-phone"></i> Números de Emergência</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="emergency-numbers">
+                                <li>
+                                    <span>SAMU:</span>
+                                    <a href="tel:192">192</a>
+                                </li>
+                                <li>
+                                    <span>Bombeiros:</span>
+                                    <a href="tel:193">193</a>
+                                </li>
+                                <li>
+                                    <span>Polícia:</span>
+                                    <a href="tel:190">190</a>
+                                </li>
+                                <li>
+                                    <span>Defesa Civil:</span>
+                                    <a href="tel:199">199</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+ 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-exclamation-circle"></i> Sinais de Emergência</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="emergency-signs">
+                                <li>Dor intensa no peito ou dificuldade para respirar</li>
+                                <li>Perda de consciência ou desmaio</li>
+                                <li>Sangramento intenso ou ferimentos graves</li>
+                                <li>Convulsões ou ataques epilépticos</li>
+                                <li>Sinais de AVC: face caída, fraqueza nos braços, fala arrastada</li>
+                            </ul>
+                        </div>
+                    </div>
+ 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-clock"></i> Tempo é Vida</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Em emergências médicas, cada minuto conta. Saiba reconhecer os sinais e agir rapidamente.</p>
+                            <div class="time-info">
+                                <div class="time-item">
+                                    <div class="time-header">
+                                        <span>Parada cardíaca:</span>
+                                        <span class="time-value">4-6 minutos</span>
+                                    </div>
+                                    <p class="time-desc">Após esse tempo, danos cerebrais podem ser irreversíveis</p>
+                                </div>
+                                <div class="time-item">
+                                    <div class="time-header">
+                                        <span>AVC:</span>
+                                        <span class="time-value">3 horas</span>
+                                    </div>
+                                    <p class="time-desc">Janela crítica para tratamento eficaz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="primeiros-socorros" class="first-aid-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Primeiros Socorros</h2>
+                    <p>Procedimentos básicos que podem salvar vidas até a chegada do socorro especializado.</p>
+                </div>
+ 
+                <div class="tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="reanimacao">Reanimação</button>
+                        <button class="tab-btn" data-tab="engasgo">Engasgo</button>
+                        <button class="tab-btn" data-tab="hemorragia">Hemorragia</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-pane active" id="reanimacao">
+                            <h3>Reanimação Cardiopulmonar (RCP)</h3>
+                            <ol>
+                                <li>Verifique se a pessoa está consciente e respirando.</li>
+                                <li>Se não estiver respirando, ligue para emergência (192).</li>
+                                <li>Coloque a pessoa de costas em uma superfície firme.</li>
+                                <li>Posicione as mãos no centro do peito, entre os mamilos.</li>
+                                <li>Comprima o peito cerca de 5-6 cm, a uma taxa de 100-120 compressões por minuto.</li>
+                                <li>Continue até a chegada do socorro ou até a pessoa mostrar sinais de vida.</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane" id="engasgo">
+                            <h3>Manobra de Heimlich (Engasgo)</h3>
+                            <ol>
+                                <li>Posicione-se atrás da pessoa e envolva-a com os braços.</li>
+                                <li>Feche uma mão em punho e posicione-a acima do umbigo, abaixo do esterno.</li>
+                                <li>Segure o punho com a outra mão e pressione para dentro e para cima com movimentos rápidos.</li>
+                                <li>Repita até que o objeto seja expelido.</li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane" id="hemorragia">
+                            <h3>Controle de Hemorragia</h3>
+                            <ol>
+                                <li>Aplique pressão direta sobre o ferimento com um pano limpo ou gaze.</li>
+                                <li>Se possível, eleve a área ferida acima do nível do coração.</li>
+                                <li>Mantenha a pressão constante por pelo menos 15 minutos.</li>
+                                <li>Não remova o pano mesmo se ficar encharcado de sangue, adicione mais material por cima.</li>
+                                <li>Procure atendimento médico imediatamente.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="localizacao" class="location-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unidades de Emergência</h2>
+                    <p>Localize a unidade de emergência mais próxima de você.</p>
+                </div>
+ 
+                <div class="hospitals-grid">
+                    <div class="hospital-card">
+                        <h3>Hospital de Emergências Central</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i>É uma unidade hospitalar que oferece atendimento especializado em urgências e emergências, com foco em casos de alta complexidade</p>
+                            <p><i class="fas fa-clock"></i> 24 horas, Todos Os Dias</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Hospital de Emergências+proximos" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+ 
+                    <div class="hospital-card">
+                        <h3>CEAM (Centro Especializado de Atendimento à Mulher)</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i> e um serviço público voltado para o atendimento humanizado e especializado a mulheres em situação de violência.</p>
+                            <p><i class="fas fa-clock"></i> Atendimento presencial: segunda a sexta, das 7h às 19h </p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Centro Especializado de Atendimento à Mulher+proximo" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+ 
+                    <div class="hospital-card">
+                        <h3>UBS (Unidade Básica de Saúde)</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i>é o principal local de atendimento preventivo e de rotina do SUS.</p>
+                            <p><i class="fas fa-clock"></i> Atendimento presencial: segunda a sexta, das 7h às 19h</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Hospital Regional+proximos" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+ 
+                    <div class="hospital-card">
+                        <h3>UPA (Unidade de Pronto Atendimento)</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i>serve para oferecer atendimento médico de urgência e emergência em situações de saúde que precisam de atenção rápida, mas que não são tão graves a ponto de exigir um hospital</p>
+                            <p><i class="fas fa-clock"></i> 24 horas,Todos os Dias </p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/UPA+proximo" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+ 
+                    <div class="hospital-card">
+                        <h3>Hospital Especializado</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i>são unidades de saúde que atendem exclusivamente ou prioritariamente determinadas doenças, áreas médicas ou públicos específicos</p>
+                            <p><i class="fas fa-clock"></i> Atendimento presencial: segunda a sexta, das 7h às 18h</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Hospital Especializado+proximos" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+ 
+                    <div class="hospital-card">
+                        <h3>Centro de Trauma</h3>
+                        <div class="hospital-info">
+                            <p><i class="fas fa-info-circle"></i>Um Centro de Trauma é uma unidade hospitalar especializada em atender pacientes vítimas de traumas graves, como acidentes de trânsito, quedas, ferimentos por armas, entre outros.</p>
+                            <p><i class="fas fa-clock"></i> 24 horas, Todos Os Dias</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Centro de Trauma+proximo" target="_blank" class="btn btn-outline btn-sm">Ver no Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Entre em Contato</h2>
+                        <p>Para informações não emergenciais, preencha o formulário ou utilize um dos canais abaixo.</p>
+                       
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <span>Central de Atendimento: (11) 2222-3333</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-ambulance"></i>
+                                <span>Agendamento de Ambulância: (11) 3333-4444</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sede Administrativa: Av. Principal, 1000 - Centro</span>
+                            </div>
+                        </div>
+                       
+                        <div class="emergency-reminder">
+                            <h3><i class="fas fa-exclamation-circle"></i> Lembre-se</h3>
+                            <p>Este formulário NÃO é para emergências. Em caso de emergência médica, ligue imediatamente para 192 (SAMU) ou 193 (Bombeiros).</p>
+                        </div>
+                    </div>
+                   
+                    <div class="contact-form-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Formulário de Contato</h3>
+                                <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+                            </div>
+                            <div class="card-content">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo</label>
+                                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Telefone</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Assunto</label>
+                                        <select id="subject" name="subject">
+                                            <option value="">Selecione um assunto</option>
+                                            <option value="info">Informações Gerais</option>
+                                            <option value="training">Treinamento em Primeiros Socorros</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Outro</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Mensagem</label>
+                                        <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>TriageMEd</span>
+                    </a>
+                    <p>Informações e recursos para situações de emergência médica.</p>
+                </div>
+               
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#emergencia">Emergência</a></li>
+                        <li><a href="#primeiros-socorros">Primeiros Socorros</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-resources">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Guia de Primeiros Socorros</a></li>
+                        <li><a href="#">Cursos e Treinamentos</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-emergency">
+                    <h3>Contato de Emergência</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:192">SAMU: 192</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:193">Bombeiros: 193</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:190">Polícia: 190</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> TriageMEd. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#emergencia" class="mobile-menu-link">Emergência</a></li>
+            <li><a href="#primeiros-socorros" class="mobile-menu-link">Primeiros Socorros</a></li>
+            <li><a href="#localizacao" class="mobile-menu-link">Localização</a></li>
+            <li><a href="#contato" class="mobile-menu-link">Contato</a></li>
+            <li><a href="#triagem" class="mobile-menu-link">Triagem</a></li>
+
+        </ul>
+        <a href="tel:192" class="btn btn-emergency btn-block">
+            <i class="fas fa-phone"></i>
+            Ligar para SAMU (192)
+        </a>
+    </div>
+ 
+    <script src="Site_T_inicial.js"></script>
+</body>
+</html>
+ 
